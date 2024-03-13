@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "poppins",sans-serif;
+}
+.top-bg{
+    width: 100%;
+    /* background-image: url("../image/About\ bg.jpg"); */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to set the opacity (0 is fully transparent, 1 is fully opaque) */
+    background-blend-mode: overlay;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 500px;
+    position: relative;
+
+    overflow: hidden;
+}
+.top-bg img{
+    width: 100%; /* Set the width to 100% */
+    height: 500px; /* Allow the height to adjust automatically to maintain the aspect ratio */
+    object-fit: cover;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.top-bg h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 990;
+
+    /* transform: translateX(50%); */
+    text-align: center;
+
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-family: "poppins",sans-serif;
+}
+.ourServicesHeading h1{
+    width: 95%;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "poppins",sans-serif;
+    text-align: justify;
+}
+#Services{
+    background-color: #efefef;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    background-color: white;
+
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+    border-radius: 5px;
+
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 20px;
+}
+.service-card img{
+    width: 100px;
+    height: 100px;
+
+    /* position: relative; */
+
+    /* transform: translate(0%,-50%); */
+}
+.service-card h1{
+    font-size: 1rem;
+    padding: 10px 0px;
+    text-align: center;
+}
+.service-card p{
+    padding: 10px 0px;
+    font-size: 0.8rem;
+
+    text-align: justify;
+}
