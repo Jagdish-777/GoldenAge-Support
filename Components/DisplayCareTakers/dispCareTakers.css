@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "poppins",sans-serif;
+}
+.Caregivers-display{
+    background-color: #efefef;
+    
+}
+.each-careGivers{
+    border-radius: 5px;
+    width: 400px;
+    background-color: white;
+}
+.each-careGivers .basicDetails-caregivers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 10px;
+
+    background-color: #8296A9;
+    
+}
+.each-careGivers .basicDetails-caregivers .name-caregivers h2{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 5px 0px;
+    
+    
+}
+.each-careGivers .basicDetails-caregivers .image-caregivers img{
+    width: 150px;
+    width: 150px;
+
+    border-radius: 50%;
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+
+}
+.each-careGivers .Experience-careGivers{
+    background-color: #C6D5DB;
+    padding: 10px 10px;
+}
