@@ -8,11 +8,19 @@ body{
     font-size: 16px;
     font-family: "poppins",sans-serif;
 }
-.Caregivers-display{
+#Caregivers-display{
     background-color: #efefef;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 30px 10px;
     
 }
 .each-careGivers{
+    margin: 10px;
     border-radius: 5px;
     width: 400px;
     background-color: white;
@@ -49,3 +57,13 @@ body{
     background-color: #C6D5DB;
     padding: 10px 10px;
 }
+@media only screen and (max-width: 900px) {
+    #Caregivers-display{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .each-careGivers{
+        width: 90%;
+    }
+  }

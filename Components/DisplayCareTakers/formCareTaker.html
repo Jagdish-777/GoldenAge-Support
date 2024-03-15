@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Care Givers</title>
+    <link rel="stylesheet" href="formCareTaker.css">
+</head>
+<body>
+    <section id="form-Care-Givers">
+      <form action="">
+        <h2>Create CareGiver Service Card</h2>
+        <div class="basic-details-CG">
+            <div class="CG-content">
+              <div class="CG-name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="CG-time">
+                <label for="from_time">Available from:</label>
+                <input type="time" id="from_time" name="from_time" required>
+
+                <label for="to_time">Available to:</label>
+                <input type="time" id="to_time" name="to_time" required>
+              </div>
+              <div class="CG-services">
+                <label for="services_offered">Services Offered:</label>
+                <textarea id="services_offered" name="services_offered" rows="4" required></textarea>
+
+              </div>
+              <div class="CG-phone">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+            </div>
+            <div class="CG-Img">
+                <div id="previewContainer"></div>
+                <label for="customFile" class="custom-file-upload">
+                    Choose File
+                  </label>
+                  <input type="file" id="customFile" name="customFile" class="input-file" accept="image/*"
+                    onchange="handleFileSelect(event)">
+                  
+            </div>
+        </div>
+
+        <div class="CG-experience">
+          <label for="exp">Experience:</label>
+          <textarea id="exp" name="exp" rows="4" required></textarea>
+
+        </div>
+        
+
+      </form>
+    </section>
+
+    <script>
+        function handleFileSelect(event) {
+          const fileInput = event.target;
+          const files = fileInput.files;
+          const previewContainer = document.getElementById('previewContainer');
+    
+          previewContainer.innerHTML = '';
+    
+          if (files.length > 0) {
+            const file = files[0];
+            console.log("Selected file:", file.name);
+    
+            if (file.type.match('image.*')) {
+              const reader = new FileReader();
+    
+              reader.onload = function (e) {
+                const previewImage = document.createElement('img');
+                previewImage.src = e.target.result;
+                previewImage.classList.add('preview-image');
+                previewContainer.appendChild(previewImage);
+              };
+    
+              reader.readAsDataURL(file);
+            } else {
+              const previewText = document.createElement('span');
+              previewText.textContent = 'File is not an image.';
+              previewContainer.appendChild(previewText);
+            }
+          }
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
