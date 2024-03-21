@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: "poppins",sans-serif;
+    min-height: 100vh;
+
+}
+#cp-section{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: baseline; */
+}
+/* left side section css start */
+#cp-section .ls-sec{
+    width: 300px;
+    /* border-right: 1px solid black; */
+    overflow-y: scroll;
+    height: 100vh;
+    background-color: #ddd;
+}
+.ls-sec ul{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+.ls-sec ul li{
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    background-color: #ddd;
+    border-bottom: 1px solid black;
+    
+    display: flex;
+    align-items: center;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.ls-sec ul li img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 10px;
+}
+.ls-sec ul .ls-gap{
+    height: 40px;
+}
+.ls-sec ul .c-label{
+    background-color: #efefef;
+}
+.ls-sec ul .labels5{
+    /* border-radius: 10px; */
+    /* border: 1px solid black; */
+    padding: 5px;
+    margin-top: 10px;
+
+    justify-content: center;
+}
+/* left side section css end */
+/* center side section css start */
+#cp-section .cs-sec{
+    width: 100%;
+    padding: 10px 0px;
+    height: 100vh;
+
+    overflow-y: scroll;
+}
+#cp-section .cs-sec .commu-card{
+    padding: 20px;
+}
+#cp-section .cs-sec .commu-card:hover{
+    border-radius: 5px;
+    background-color: #ddd;
+}
+#cp-section .cs-sec .commu-card .commu-head{
+    display: flex;
+    align-items: center;
+}
+#cp-section .cs-sec .commu-card .commu-head img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    border-radius: 50%;
+}
+#cp-section .cs-sec .commu-card .commu-head h1{
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+#cp-section .cs-sec .commu-card .commu-head p{
+    font-weight: 500;
+    font-size: 1rem;
+}
+#cp-section .cs-sec .commu-card .commu-body .body-head{
+    font-size: 1.3rem;
+    padding: 15px;
+
+}
+#cp-section .cs-sec .commu-card .commu-body .body-head h1{
+    font-size: 1.3rem;
+
+}
+#cp-section .cs-sec .commu-card .commu-body .commu-body{
+    padding: 15px;
+    padding-top: 0px;
+
+}
+#cp-section .cs-sec .commu-card .commu-body .commu-body p{
+    font-size: 1rem;
+
+}
+/* center side section css end */
