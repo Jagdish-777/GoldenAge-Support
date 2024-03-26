@@ -63,17 +63,28 @@ body{
 /* center side section css start */
 #cp-section .cs-sec{
     width: 100%;
-    padding: 10px 0px;
     height: 100vh;
+    background-color: #ddd;
 
     overflow-y: scroll;
 }
+#cp-section .cs-sec .cs-heading h1{
+    font-size: 2rem;
+    padding: 50px 0px;
+    text-decoration: underline;
+
+    font-weight: 600;
+    text-align: center;
+}
 #cp-section .cs-sec .commu-card{
     padding: 20px;
+    padding-bottom: 0px;
+    background-color: #ddd;
+    cursor: pointer;
 }
 #cp-section .cs-sec .commu-card:hover{
     border-radius: 5px;
-    background-color: #ddd;
+    background-color: #778899;
 }
 #cp-section .cs-sec .commu-card .commu-head{
     display: flex;
@@ -96,20 +107,30 @@ body{
 }
 #cp-section .cs-sec .commu-card .commu-body .body-head{
     font-size: 1.3rem;
-    padding: 15px;
+    padding: 10px;
 
 }
 #cp-section .cs-sec .commu-card .commu-body .body-head h1{
-    font-size: 1.3rem;
-
-}
-#cp-section .cs-sec .commu-card .commu-body .commu-body{
-    padding: 15px;
-    padding-top: 0px;
-
-}
-#cp-section .cs-sec .commu-card .commu-body .commu-body p{
     font-size: 1rem;
 
+}
+.commu1-body p {
+    padding: 10px;
+    font-size: 0.8rem;
+    padding-top: 0;
+}
+.commu-interact{
+    padding: 0px 15px;
+    line-height: 48px;
+}
+.commu-interact img{
+    cursor: pointer;
+    height: 30px;
+    padding: 5px 20px;
+    border-radius: 48px;
+    /* border: 1px solid black; */
+    background-color: rgba(148, 147, 147, 0.5);
+
+    
 }
 /* center side section css end */
