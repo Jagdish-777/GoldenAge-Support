@@ -25,3 +25,92 @@ body{
     display: flex;
     align-items: center;
 }
+.EC-sec .EC-all .EC-Topic .ECT-head img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.EC-sec .EC-all .EC-Topic .ECT-head img:last-child{
+    margin-left: 20px;
+    border: 1px solid red;
+}
+.EC-sec .EC-all .EC-Topic .ECT-head .ECT-label{
+    margin-left: 20px;
+}
+.EC-sec .EC-all .EC-Topic .ECT-head .ECT-label h5{
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+.EC-sec .EC-all .EC-Topic .ECT-head .ECT-label h4{
+    font-size: 0.8rem;
+    color: rgb(46, 46, 46);
+}
+.EC-sec .EC-all .EC-Topic .ECT-head p{
+    font-size: 0.8rem;
+    margin-left: 20px;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .ECT-body-head h2{
+    font-size: 1.2rem;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .ECT-body-body{
+    padding: 10px;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .ECT-body-body p{
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .ECT-body-body h1{
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+.EC-sec .EC-all .EC-Topic .commu-interact{
+    padding: 0px 15px;
+    line-height: 48px;
+}
+.EC-sec .EC-all .EC-Topic .commu-interact img{
+    cursor: pointer;
+    height: 30px;
+    padding: 5px 20px;
+    border-radius: 48px;
+    /* border: 1px solid black; */
+    background-color: rgba(148, 147, 147, 0.5);
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .comment label{
+    width: 100%;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .comment label textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment{
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment .comment-head{
+    display: flex;
+    align-items: center;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment .comment-head img{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment .comment-head .comment-label h4{
+    font-size: 1rem;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment .comment-head p{
+    padding: 0px 10px;
+    font-size: 0.8rem;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment .comment-body{
+    margin-left: 30px;
+    padding-top: 5px;
+}
+.EC-sec .EC-all .EC-Topic .ECT-body .each-comment .comment-body p{
+    font-size: 0.8rem;
+}
